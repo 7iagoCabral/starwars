@@ -3,8 +3,10 @@ import styled from "styled-components";
 
 
 export const Button = props => {
+
+    
     return(
-        <ButtonStyled >{props.name}</ButtonStyled>
+        <ButtonStyled onClick={props.onClick}>{props.name}</ButtonStyled>
     );
 }
 const ButtonStyled = styled.button`
@@ -18,7 +20,5 @@ const ButtonStyled = styled.button`
     border:0;
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
-    
-    
-    
+  
 `;
